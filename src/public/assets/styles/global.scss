@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $color-almost-black;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: $color-almost-black;
+}
+
+button {
+  background-color: $color-almost-black;
+  border: 1px solid $color-black;
+  border-radius: 5px;
+  color: $color-lightest-gray;
+  padding: 0.5rem;
+  transition: color $transition, background-color $transition;
+  word-break: initial;
+}
+
+button:hover {
+  background-color: $color-lightest-gray;
+  color: $color-almost-black;
+}
+
+button:active {
+  background-color: $color-almost-black;
+  border: 1px solid $color-black;
+  color: $color-lightest-gray;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Montaga', Georgia, serif;
+}
+
+main {
+  padding-left: 10px;
+  padding-right: 10px;
+}

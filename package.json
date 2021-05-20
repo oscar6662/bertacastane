@@ -1,0 +1,29 @@
+{
+  "name": "bertacastane",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "browser-sync": "browser-sync start --server --files ./src/public/index.html ./src/public/styles.css",
+    "sass": "node-sass --source-map-embed ./src/public/styles.scss ./src/public/styles.css",
+    "sass-watch": "node-sass --source-map-embed --watch *.scss --recursive styles.css",
+    "dev": "concurrently npm:sass-watch npm:browser-sync",
+    "lint": "stylelint /src/public/styles.scss ./**/*.scss"
+  },
+  "author": "Óskar Helgi Berenguer",
+  "license": "ISC",
+  "dependencies": {
+    "browser": "^0.2.6",
+    "concurrently": "^6.1.0",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "node-sass": "^6.0.0",
+    "path": "^0.12.7",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^22.0.0",
+    "sync": "^0.2.5",
+    "url": "^0.11.0"
+  }
+}
