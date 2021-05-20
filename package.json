@@ -7,9 +7,9 @@
   "scripts": {
     "browser-sync": "browser-sync start --server --files ./src/public/index.html ./src/public/styles.css",
     "sass": "node-sass --source-map-embed ./src/public/styles.scss ./src/public/styles.css",
-    "sass-watch": "node-sass --source-map-embed --watch *.scss --recursive styles.css",
+    "sass-watch": "node-sass --source-map-embed --watch ./src/public/styles.scss --recursive ./src/public/styles.css",
     "dev": "concurrently npm:sass-watch npm:browser-sync",
-    "lint": "stylelint /src/public/styles.scss ./**/*.scss"
+    "lint": "stylelint ./src/public/styles.scss ./**/**/*.scss"
   },
   "author": "Óskar Helgi Berenguer",
   "license": "ISC",
